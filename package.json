@@ -1,0 +1,21 @@
+{
+  "name": "ofrgnight.github.io",
+  "version": "1.0.0",
+  "description": "A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "deploy": "ELEVENTY=production npx @11ty/eleventy --input=src --output=docs && ./deploy.sh",
+    "build": "rm -rf docs && ELEVENTY=production npx @11ty/eleventy --input=src --output=docs",
+    "dev": "rm -rf docs && npx @11ty/eleventy --input=src --output=docs --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "eleventy-sass": "^2.2.4"
+  }
+}

@@ -1,0 +1,37 @@
+---
+permalink: /404.html
+layout: layouts/base
+---
+<style>
+  body {
+    background-image: url('/assets/images/default.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  color: #b5b5b5;
+  & a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+  </style>
+<div class="container">
+<h1>OOps, página não encontrada</h1>
+<br>
+<p><a href="{{ meta.url }}">Clique aqui</a> para voltar ao início.</p>
+</div>
+
