@@ -1,0 +1,174 @@
+* {
+  @apply box-border max-w-[100dvw] m-0 p-0 font-sans;
+}
+html {
+  @apply scroll-smooth;
+}
+body {
+  @apply text-center grid;
+  grid-template-areas:
+    "header"
+    "intro"
+    "about"
+    "services"
+    "team"
+    "location"
+    "socials"
+    "footer";
+}
+section {
+  @apply px-0 py-[50px];
+}
+section .container {
+  @apply mx-auto my-0 px-5 py-0;
+}
+a {
+  @apply no-underline text-inherit transition-all duration-[0.3s] ease-[ease] p-[15px];
+}
+ul {
+  list-style: none;
+}
+h2 {
+  @apply text-[2rem];
+}
+@media screen and (max-width: 864px) {
+  .serviceIcons,
+  .socialIcons,
+  .teamMembers {
+    @apply flex-col flex-wrap;
+  }
+  header {
+    grid-template-areas:
+      "logo"
+      "nav" !important;
+    text-wrap: nowrap !important;
+  }
+  header .nav {
+    @apply grid h-0 overflow-hidden grid-cols-[1fr] col-[span_2];
+  }
+  header #menuLabel {
+    @apply block cursor-pointer;
+  }
+}
+.logo {
+  @apply font-bold uppercase text-center max-w-[210px] p-4;
+}
+.button {
+  @apply text-[1.2rem] text-[white] cursor-pointer font-semibold bg-[#d50024] px-5 py-2.5 rounded-[300px] border-[none] hover:bg-[#b7001e] active:bg-[#ef0028];
+  text-wrap: nowrap;
+}
+header {
+  @apply grid grid-cols-[1fr_auto] p-2.5 items-center;
+}
+header label {
+  @apply font-[bold];
+}
+.nav {
+  @apply transition-[height] duration-[0.5s] ease-[ease] grid-cols-[repeat(auto-fit,1fr)] p-0;
+}
+.nav a:hover,
+.nav a:focus {
+  @apply text-[#d50024];
+}
+#menu {
+  @apply hidden;
+}
+#menuLabel {
+  @apply hidden;
+}
+#menu:checked + nav {
+  @apply h-auto;
+}
+#intro {
+  @apply h-screen grid items-center text-white bg-[url("/images/header.webp")] bg-no-repeat bg-cover bg-center;
+  grid-area: intro;
+}
+#intro .tagLine {
+  @apply text-[#ffffffb3];
+}
+#intro h1 {
+  @apply text-5xl mb-5;
+}
+#intro p {
+  @apply text-2xl mb-5;
+}
+#about {
+  @apply bg-[#d50024] text-white;
+  grid-area: about;
+}
+#about .button {
+  @apply bg-[#f4f4f4] text-black font-semibold hover:bg-[#d2d2d2] active:bg-white;
+}
+#services {
+  grid-area: services;
+}
+#services .serviceIcons {
+  @apply flex justify-center items-center flex-row gap-[50px];
+}
+#services .serviceIcons img img {
+  @apply max-w-full mb-5;
+}
+#location {
+  @apply bg-[#222222] text-white;
+  grid-area: location;
+}
+#team {
+  grid-area: team;
+}
+#team .teamMembers {
+  @apply flex flex-row justify-center gap-[50px];
+}
+#team .teamMembers .name {
+  @apply text-[#333333];
+}
+#team .teamMembers .role {
+  @apply text-[#777777];
+}
+#team .avatar {
+  @apply object-cover aspect-[1] max-w-full shadow-[0.25rem_0.25rem_0.5rem_rgba(0,0,0,0.233)] mb-5 rounded-[100vw] border-[5px] border-solid border-white;
+}
+#socials {
+  @apply bg-[#222222] text-[#f4f4f4];
+  grid-area: socials;
+}
+#socials .socialIcons {
+  @apply flex justify-center flex-row text-center gap-[50px];
+}
+#socials .socialIcons img {
+  @apply max-w-full mb-5;
+}
+#footer {
+  @apply bg-[#333] text-[#f4f4f4] text-[1.2rem] p-2.5;
+  grid-area: footer;
+}
+#footer a {
+  @apply m-0 p-0;
+}
+
+/* Animations */
+.memberCard,
+.serviceIcon,
+.socialIcon {
+  @apply transition-all duration-[0.3s] ease-[ease];
+}
+.memberCard:hover,
+.serviceIcon:hover,
+.socialIcon:hover,
+.memberCard:focus,
+.serviceIcon:focus,
+.socialIcon:focus {
+  scale: 1.15 !important;
+}
+.memberCard:focus {
+  scale: 1.15 !important;
+}
+/* .will-animate {
+  @apply opacity-0 transition-all duration-[0.5s] ease-[ease-out];
+  translate: -100px;
+  scale: 0.7;
+} */
+.animated {
+  @apply opacity-100;
+  scale: 1 !important;
+  translate: 0 0 !important;
+}
