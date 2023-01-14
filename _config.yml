@@ -1,0 +1,14 @@
+# Site settings
+title:
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://ofrgnight.github.io/" # the base hostname & protocol for your site
+
+email: "ofrgnight@gmail.com"
+facebook: "OFRogerNight"
+whatsapp: "5511911406590"
+
+# Build settings
+markdown: kramdown
+
+exclude: [deploy-ofrg.sh]
