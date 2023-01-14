@@ -1,0 +1,14 @@
+<section id="services">
+  <div class="container">
+    <h2 class="will-animate title">Serviços mais comuns</h2>
+    <br>
+      <div class="serviceIcons">
+      {% for service in meta.services %}
+        <div class="will-animate serviceIcon">
+          <img class="will-animate mx-auto" height="100px" width="100px" src="{{ meta.url }}/{{ service.icon }}" alt="{{ service.name }}" title="{{ service.description }}"></img>
+          <h3 class="will-animate">{{ service.name }}</h3>
+        </div>
+      {% endfor %}
+      </div>
+  </div>
+</section>

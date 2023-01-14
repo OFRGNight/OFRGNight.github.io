@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="{{ meta.url }}/assets/images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="{{ meta.url }}/assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Meta OG --> 
+    <title>{{ meta.siteName }}</title>
+    <meta property="og:title" content="{{ meta.siteName }}">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="description" content="{{ meta.description }}">
+    <meta property="og:description" content="{{ meta.description }}">
+    <link rel="canonical" href="{{ meta.url }}">
+    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:site_name" content="{{ meta.siteName }}">
+    <meta property="og:image" content="{{ meta.url }}/assets/images/default.webp">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="{{ meta.url }}/assets/images/default.webp" />
+    <meta property="twitter:title" content="{{ meta.siteName }}" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","description":"{{ meta.description }}","headline":"{{ meta.siteName }}","image":"{{ meta.url }}/assets/images/default.webp","name":"{{ meta.siteName }}","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"{{ meta.url }}/assets/images/default.webp"}},"url":"{{ meta.url }}/"}</script>
+
+  <title>{{ meta.siteName }}</title>
+</head>
+<body>
+  {% include "components/header.njk" %}
+  <main>
+    {{ content }}
+  </main>
+  {% include "components/footer.njk" %}
+
+  <script src="{{ meta.url }}/assets/js/script.js"></script>
+</body>
+</html>
