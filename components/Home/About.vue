@@ -10,7 +10,7 @@ import siteMeta from '~/siteMeta';
     <br>
     <p class="will-animate" >{{ siteMeta.about }}</p>
     <br>
-    <a class="will-animate button" href="#socials">FALE CONOSCO</a>
+    <a class="will-animate button active:scale-95" href="#socials">FALE CONOSCO</a>
   </div>
 </section>
 </template>

@@ -2,7 +2,7 @@
 import siteMeta from "./siteMeta";
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/icon"],
   app: {
     head: {
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:url",
-          content: "https://ofrgnight.github.io", // Replace with your actual URL
+          content: "https://ofrgnight.github.io",
         },
         {
           property: "og:site_name",

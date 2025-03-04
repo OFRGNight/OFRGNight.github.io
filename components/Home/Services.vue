@@ -5,7 +5,7 @@
     <br>
       <div class="serviceIcons">
         <div v-for="service in siteMeta.services" :key="service.name" class="will-animate serviceIcon">
-          <img class="will-animate mx-auto" height="100px" width="100px" :src="service.icon" :alt="service.name" :title="service.description"></img>
+          <Icon :name="service.icon" size="100px" class="text-red-500" />
           <h3 class="will-animate">{{ service.name }}</h3>
         </div>
       </div>

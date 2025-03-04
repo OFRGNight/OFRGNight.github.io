@@ -1,7 +1,7 @@
 <template>
   <header id="top">
     <a class="logo hover:text-red-500" href="/">{{ siteMeta.siteName }}</a>
-    <label id="menuLabel" for="menu">MENU</label>
+    <label id="menuLabel" for="menu"><Icon name="mdi:menu" size="50px" /></label>
     <input type="checkbox" id="menu">
     <nav class="nav">
         <a class="will-animate" href="/#about">SOBRE</a>

@@ -5,10 +5,10 @@ import siteMeta from '~/siteMeta';
 <template>
   <section id="intro">
   <div class="container">
-    <h1 class="will-animate">{{ siteMeta.slogan }}</h1>
+    <h1 class="will-animate font-bold">{{ siteMeta.slogan }}</h1>
     <p class="will-animate tagLine">{{ siteMeta.tagLine }}</p>
     <br>
-    <a class="will-animate button" href="#about">SAIBA MAIS</a>
+    <a class="will-animate button active:scale-95" href="#about">SAIBA MAIS</a>
   </div>
 </section>
 </template>

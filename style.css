@@ -54,7 +54,7 @@ h2 {
   @apply font-bold uppercase text-center max-w-[210px] p-4;
 }
 .button {
-  @apply text-[1.2rem] text-[white] cursor-pointer font-semibold bg-[#d50024] px-5 py-2.5 rounded-[300px] border-[none] hover:bg-[#b7001e] active:bg-[#ef0028];
+  @apply text-[1.2rem] text-[white] cursor-pointer font-semibold bg-[#d50024] px-5 py-2.5 rounded-[300px] border-[none] hover:bg-[#b7001e] hover:scale-105 active:bg-[#ef0028];
   text-wrap: nowrap;
 }
 header {
