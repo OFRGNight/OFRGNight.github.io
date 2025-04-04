@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import siteMeta from "./siteMeta";
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
+  compatibilityDate: "2025-04-04",
   devtools: { enabled: false },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/icon"],
   app: {
