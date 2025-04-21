@@ -60,11 +60,11 @@ export default {
       role: "CEO / Mecânico",
       image: "/images/team/Rogerio.webp",
     },
-    // {
-    //   name: "André",
-    //   role: "Mecânico",
-    //   image: "/images/team/Andre.webp",
-    // },
+    {
+      name: "André",
+      role: "Mecânico",
+      image: "/images/team/Andre.webp",
+    },
     // {
     //   name: "Victor",
     //   role: "Mecânico",
